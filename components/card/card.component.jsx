@@ -1,17 +1,27 @@
 import styles from './card.module.css';
+import Image from 'next/image';
 
 const Card = () => {
   return (
     <div className={styles.cardContainer}>
-      <div>
-        <img src="/image-12" alt="picture of swimmer katie zaferes" />
+      <div className={styles.imageContainer}>
+        <img
+          src="/image-12.png"
+          alt="picture of swimmer katie zaferes"
+          className={styles.cardImage}
+        />
       </div>
-      <div>
-        <img src="star" alt="rating star icon" />
-        <p>5.0 (6) * USA</p>
+      <div className={styles.detailsContainer}>
+        <div className={styles.rating}>
+          <img src="/star.png" alt="rating star icon" />
+          <p>
+            5.0 <span>(6) • USA</span>
+          </p>
+        </div>
+
         <p>Life lessons with Katie Zaferes</p>
         <p>
-          <span>From $136</span> / person
+          <span className={styles.bold}>From $136</span> / person
         </p>
       </div>
     </div>

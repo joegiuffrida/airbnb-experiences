@@ -1,0 +1,31 @@
+.cardContainer {
+  width: 175px;
+  font-size: 0.75rem;
+}
+
+.imgContainer img {
+  width: 100%;
+  border-radius: 9px;
+}
+
+.detailsContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.rating {
+  display: flex;
+  align-items: baseline;
+}
+
+.rating img {
+  height: 14px;
+}
+
+.rating span {
+  color: #918e9b;
+}
+
+.bold {
+  font-weight: bold;
+}
